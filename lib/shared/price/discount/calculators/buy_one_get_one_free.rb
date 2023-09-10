@@ -7,8 +7,6 @@ module Shared
     module Discount
       module Calculators
         class BuyOneGetOneFree
-          # TODO: add unit specs
-
           def initialize(options:, accumulator: Shared::Accumulator.new)
             @quantity = options[:quantity]
             @pricing_rule = options[:pricing_rule]
